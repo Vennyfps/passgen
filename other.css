@@ -1,0 +1,45 @@
+.text-wrapper {
+  padding-top: 275px;
+  text-align: center;
+  position: relative;
+  font-size: 50px;
+}
+
+.text-wrapper span {
+  text-align: center;
+  font-family: Ubuntu;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 5px;
+  animation: waveAnim 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes waveAnim {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: monospace;
+  font-size: 20px;
+}
+

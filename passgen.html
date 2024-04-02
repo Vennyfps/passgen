@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Password</title>
+    <link rel="stylesheet" href="passgen.css">
+    <link rel="stylesheet" href="passgen.js">
+    <link rel="stylesheet" href="b.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        code {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            overflow-x: auto;
+        }
+        .nigger{
+          padding-left: 1250px;
+          display: inline-block;
+        }
+        button {
+            size: 300px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        #passwordOutput {
+            font-family: 'Product Sans'; 
+            font-size: 18px; 
+            font-weight: bold; 
+            color: #008800;; 
+            margin-top: 10px; 
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<div class="nigha">
+<body>
+    <nav>
+        <ul>
+            <li><a href="passgen.html"> <span style="font-family: monospace; font-size: 20px; color: black;">CustomPass</a></span></li>
+            <li><a href="about.html"><span style="font-family: monospace; font-size: 20px;color: black"> About</a></span></li>
+            <li><a href="other.html"><span style="font-family: monospace; font-size: 20px;color: black;">Other</a></span></li>
+        </ul>
+    </nav>
+  </div>
+    <div class="nigger">
+    <h1 style="font-size: 57px;font-family: Product Sans">Custom Password</h1>
+    <p style="font-size: 32.5px;font-family:Gotham, sans-serif; font-weight: bold;">Click the button below to generate a password:</p>
+    <button style="font-family:Verdana, Geneva, Tahoma, sans-serif" id="generateButton">Generate Password</button>
+    <p style="color: white;" id="passwordOutput"></p>
+  </div>
+    <span style="color:white;">
+    <script>
+        document.getElementById("generateButton").addEventListener("click", function() {
+            var alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            var passwordLength = 8;
+            var password = "";
+            for (var i = 0; i < passwordLength; i++) {
+                var randomIndex = Math.floor(Math.random() * alphabet.length);
+                password += alphabet.charAt(randomIndex);
+            }
+            document.getElementById("passwordOutput").textContent = "Generated password: " + password;
+        });
+    </script>
+    </span>
+    <style>
+      button{
+        padding-bottom: 10px;
+        transform: scale(1.25);
+        transform-origin: 0 0;
+      }
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          overflow-y: auto;
+      }
+      code {
+          background-color: white;
+          padding: 10px;
+          border-radius: 15px;
+          display: inline-block;
+          overflow-x: auto;
+          transform: scale(1.75);
+          transform-origin:0 0;
+      }
+      .password-container {
+            margin-right: 20px;
+        }
+        .nigger{
+          padding:20px;
+        }
+        .container {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: flex-start;  
+    padding: 20px;
+    padding-bottom: 700px;
+}
+
+.content {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.video {
+    flex: 1;
+    max-width: 51%; 
+}
+
+.video iframe {
+   border: none;
+    width: 1400px;
+    height: 500px;
+    padding-left: 1000px;
+}
+.block {
+    padding: 20px;
+}
+
+.video-and-code {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    gap: 20px;
+    padding: 20px;
+    max-width:100%;
+}
+
+.video-and-code iframe {
+    max-width: 100%; 
+}
+
+.video-and-code code {
+    max-width: 100%;
+    overflow-x: auto; 
+}
+.codes{
+  padding-bottom: 750px;
+}
+.nigha{
+  padding-top: 30px;
+  transform: scale(1.25);
+  transform-origin:0 0;
+  padding-right: 425px;
+}
+
+  </style>
+</head>
+<body>
+
+    <div class="block">
+      <div class video-and-code>
+        <div class="video">
+          <iframe allow="autoplay" src="https://streamable.com/e/1o6gws?autoplay=1&muted=1&nocontrols=1"></iframe>
+        </div>
+        <div class="codes">
+          <h1 style="font-size: 37px;font-family: Product Sans">Here is the code in .py</h1>
+          <code>
+              <pre>
+<span style="color:#0a9ba8;">import</span> string
+<span style="color: #0a9ba8;">import</span> random
+<span style="color: #0a9ba8;">def</span> generate_password():
+    alphabet = string.ascii_letters <span style="color: #333333;">+</span> string.digits
+    password = <span style="color: #333333;font-size: 15px;">''</span>.join(random.choice(alphabet) <span style="color: #333333;">for</span> _ <span style="color: #000000;">in</span> <span style="color: #0a9ba8;">range</span>(<span style="color: #000000;">8</span>))
+    <span style="color: #0a9ba8;">print</span>(<span style="color: #333333;">"Generated</span> <span style  ="color: #333333;">password:</span>", password)
+<span style="color: purple;padding-left:-3px;">generate_password()</span>
+              </pre>
+          </code>
+        </div>
+        </div>
+      </div>
+  </div>
+      </pre>
+  </code>
+<footer style="font-size: 15px; font-family:Product Sans;"> ©All rights reserved.Made by schizokid33. 2024 </footer>
+</body>
+</html>
